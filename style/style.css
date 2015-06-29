@@ -51,11 +51,29 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+@font-face {
+	font-family: 'Agora light';
+	src: url('../fonts/PFDinTextCompPro-Light.eot');
+	src: url('../fonts/PFDinTextCompPro-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFDinTextCompPro-Light.woff') format('woff'),
+	url('../fonts/PFDinTextCompPro-Light.ttf') format('truetype'),
+	url('../fonts/PFDinTextCompPro-Light.svg#pf_agora_sans_probold') format('svg');
+}
+@font-face {
+	font-family: 'Agora thin';
+	src: url('../fonts/PFDinTextCompPro-Thin.eot');
+	src: url('../fonts/PFDinTextCompPro-Thin.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFDinTextCompPro-Thin.woff') format('woff'),
+	url('../fonts/pfdintextcomppro-thin.ttf') format('truetype'),
+	url('../fonts/PFDinTextCompPro-Thin.svg#pf_agora_sans_probold') format('svg');
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.container {
+	width: 1340px;
+	margin: 0 auto;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
