@@ -297,8 +297,8 @@ iframe                         { display: block }
             padding: 30px 65px;
             background: #fff;
         }
-            .popup .text,
-            .popup .message {
+            .form-content .text,
+            .form-content .message {
                 display: block;
                 width: 100%;
                 margin-bottom: 18px;
@@ -311,11 +311,11 @@ iframe                         { display: block }
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
             }
-            .big-video .popup .text,
-            .big-video .popup .message {
+            .main-page .text,
+            .main-page .message {
                 border: none;
             }
-            .popup .message {
+            .form-content .message {
                 height: 82px;
                 resize: none;
             }
@@ -696,6 +696,25 @@ iframe                         { display: block }
 					border-bottom-right-radius: 4px;
 					border-bottom-left-radius: 4px;
 				}
+
+/*-------------------------------POPUP------------------------------*/
+#popup1,
+#popup2 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -195px 0 0 -215px;
+}
+.bg-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
