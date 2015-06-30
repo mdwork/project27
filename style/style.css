@@ -77,6 +77,7 @@ a:hover                        { text-decoration:underline; }
 }
 .wrapper {
     min-height: 100%;
+    min-width: 1340px;
 }
 .wrapper:after {
     content: '';
@@ -87,7 +88,69 @@ a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.header {
+    margin-bottom: 11px;
+}
+    .top-header {
+        overflow: hidden;
+        padding: 8px 0;
+        background: #f1f1f1;
+        border-bottom: 1px solid #c6c6c6;
+        min-width: 1340px;
+    }
+        .header .list-soc-link {
+            float: right;
+        }
+            .header .list-soc-link li {
+                float: left;
+                width: 25px;
+                height: 25px;
+                margin-left: 5px;
+                background: url("../images/header/soc_links.png") no-repeat;
+                transition: .3s;
+            }
+            .header .list-soc-link .tw {
+                background-position-x: -33px;
+            }
+            .header .list-soc-link .lind {
+                background-position-x: -66px;
+            }
+            .header .list-soc-link .vk {
+                background-position-x: -99px;
+            }
+            .header .list-soc-link .od {
+                background-position-x: -132px;
+            }
+            .header .list-soc-link .yt {
+                background-position-x: -165px;
+            }
+            .header .list-soc-link .inst {
+                background-position-x: -198px;
+            }
+            .list-soc-link li:hover {
+                opacity: .7;
+            }
+                .header .list-soc-link a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-indent: -9999px;
+                }
+        .btn-remember {
+            float: right;
+            border: none;
+            padding: 2px 0 2px 25px;
+            margin-left: 40px;
+            background: url("../images/header/hart.png") no-repeat left center;
+        }
+            .btn-remember:hover span {
+                text-decoration: none;
+            }
+            .btn-remember span {
+                font: 21px 'Agora thin', sans-serif;
+                color: #e3000f;
+                text-decoration: underline;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -152,10 +215,10 @@ a:hover                        { text-decoration:underline; }
                 color: #6c6c6c;
                 font: 18px 'Agora thin', serif;
             }
-            .list-soc-link {
+            .footer .list-soc-link {
                 overflow: hidden;
             }
-                .list-soc-link li {
+                .footer .list-soc-link li {
                     float: left;
                     width: 25px;
                     height: 25px;
@@ -164,10 +227,7 @@ a:hover                        { text-decoration:underline; }
                     background: url("../images/footer/sprite_soc_links.png") no-repeat;
                     transition: .3s;
                 }
-                .list-soc-link li:hover {
-                    opacity: .7;
-                }
-                    .list-soc-link a {
+                    .footer .list-soc-link a {
                         display: block;
                         width: 100%;
                         height: 100%;
@@ -176,22 +236,22 @@ a:hover                        { text-decoration:underline; }
                         -moz-border-radius: 30px;
                         border-radius: 30px;
                     }
-                .list-soc-link li:first-child {
+                .footer .list-soc-link li:first-child {
                     margin-left: 0;
                 }
-                .list-soc-link .tw {
+                .footer .list-soc-link .tw {
                     background-position-x: -28px;
                 }
-                .list-soc-link .vk {
+                .footer .list-soc-link .vk {
                     background-position-x: -55px;
                 }
-                .list-soc-link .rss {
+                .footer .list-soc-link .rss {
                     background-position-x: -82px;
                 }
-                .list-soc-link .fb {
+                .footer .list-soc-link .fb {
                     background-position-x: -110px;
                 }
-                .list-soc-link .od {
+                .footer .list-soc-link .od {
                     background-position-x: -138px;
                 }
 		.list-soc-group {
