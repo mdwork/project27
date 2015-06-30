@@ -2,12 +2,13 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:14px 'Agora thin', sans-serif; background:#fff; color:#000; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
 	list-style:none;
+    line-height: 1.2;
 }
 button                         { cursor: pointer; }
 select, input, textarea        { font-size:12px; vertical-align:middle; }
@@ -17,8 +18,8 @@ input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
-a:hover                        { text-decoration:none; }
+a:link, a:visited              { font:14px 'Agora thin', sans-serif; color:#000; text-decoration:none; line-height: 1.2 }
+a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -74,6 +75,15 @@ a:hover                        { text-decoration:none; }
 	width: 1340px;
 	margin: 0 auto;
 }
+.wrapper {
+    min-height: 100%;
+}
+.wrapper:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 314px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -89,7 +99,123 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.footer {
+	overflow: hidden;
+    margin-top: -294px;
+	padding: 30px 0 45px;
+	border-top: 1px solid #cacaca;
+}
+	.footer .left {
+		float: left;
+	}
+        .footer .menu {
+            margin-bottom: 40px;
+        }
+            .footer .menu a {
+                font-size: 18px;
+                color: #6c6c6c;
+                line-height: 1.2;
+            }
+	.footer .wrap {
+		float: right;
+	}
+		.footer .contact {
+			float: left;
+            margin-right: 90px;
+		}
+            .footer .tell {
+                display: block;
+                font: 36px 'Agora light';
+                color: #999;
+            }
+            a.tell {
+                text-decoration: none;
+            }
+                .footer .tell span {
+                    color: #2b2929;
+                }
+            .footer .address {
+                display: block;
+                height: 55px;
+                margin-top: 5px;
+            }
+                .footer .address span {
+                    display: inline-block;
+                    color: #e80080;
+                    border-bottom: 1px dashed #e80080;
+                    font-style: normal;
+                    font-family: Arial, serif;
+                }
+            .footer .text-soc-link {
+                display: inline-block;
+                margin-bottom: 5px;
+                color: #6c6c6c;
+                font: 18px 'Agora thin', serif;
+            }
+            .list-soc-link {
+                overflow: hidden;
+            }
+                .list-soc-link li {
+                    float: left;
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 3px;
+                    text-indent: -9999px;
+                    background: url("../images/footer/sprite_soc_links.png") no-repeat;
+                    transition: .3s;
+                }
+                .list-soc-link li:hover {
+                    opacity: .7;
+                }
+                    .list-soc-link a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
 
+                        -webkit-border-radius: 30px;
+                        -moz-border-radius: 30px;
+                        border-radius: 30px;
+                    }
+                .list-soc-link li:first-child {
+                    margin-left: 0;
+                }
+                .list-soc-link .tw {
+                    background-position-x: -28px;
+                }
+                .list-soc-link .vk {
+                    background-position-x: -55px;
+                }
+                .list-soc-link .rss {
+                    background-position-x: -82px;
+                }
+                .list-soc-link .fb {
+                    background-position-x: -110px;
+                }
+                .list-soc-link .od {
+                    background-position-x: -138px;
+                }
+		.list-soc-group {
+			float: left;
+		}
+			.list-soc-group li {
+				float: left;
+				width: 238px;
+				margin-left: 28px;
+			}
+			.list-soc-group li:first-child {
+				margin-left: 0;
+			}
+				#vk_groups,
+				#vk_groups2 {
+					border: 1px solid #bec8d3;
+
+					-webkit-border-bottom-right-radius: 4px;
+					-webkit-border-bottom-left-radius: 4px;
+					-moz-border-radius-bottomright: 4px;
+					-moz-border-radius-bottomleft: 4px;
+					border-bottom-right-radius: 4px;
+					border-bottom-left-radius: 4px;
+				}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/

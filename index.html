@@ -6,14 +6,95 @@
     <meta name="viewport" content="width=1024, user-scalable=yes">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 </head>
 
 <body>
+    <!--WIDGET-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups2", {mode: 0, width: "238", height: "213", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 20003922);
+    </script>
+
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups", {mode: 0, width: "238", height: "213", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 20003922);
+    </script>
+    <!--END-->
+
+
     <div class="wrapper">
         <div class="header"></div>
         <div class="content"></div>
-        <div class="footer"></div>
     </div>
+
+    <footer class="footer container">
+        <div class="left">
+            <ul class="menu">
+                <li><a href="#">Фотоагентство</a></li>
+                <li><a href="#">Фотостудия</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Карта сайта</a></li>
+            </ul>
+
+            <span class="counter">
+                <img src="images/footer/counter.jpg" alt="counter">
+            </span>
+        </div><!--end LEFT-->
+
+        <div class="wrap">
+            <div class="contact">
+                <a class="tell" href="tel:+784957957780"><span>8 495</span> 795 77 80</a>
+                <a class="tell" href="tel:+784957957780"><span>8 495</span> 795 77 80</a>
+
+                <address class="address">
+                    <span>Адрес</span>
+                </address>
+
+                <span class="text-soc-link">Мы в соц сети -</span>
+                <ul class="list-soc-link">
+                    <li><a href="#">google</a></li>
+                    <li class="tw"><a href="#">twitter</a></li>
+                    <li class="vk"><a href="#">vkontakte</a></li>
+                    <li class="rss"><a href="#">rss</a></li>
+                    <li class="fb"><a href="#">facebook</a></li>
+                    <li class="od"><a href="#">odnoclassniki</a></li>
+                </ul>
+            </div><!--end LIST-SOC-->
+
+            <ul class="list-soc-group">
+                <li><!-- VK Widget -->
+                    <div id="vk_groups"></div>
+                </li>
+
+                <li>
+                    <!-- VK Widget -->
+                    <div id="vk_groups2"></div>
+                </li>
+
+                <li>
+                    <!-- FB Widget -->
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="237" data-height="185" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="false">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/facebook">
+                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div><!--end WRAP-->
+    </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/commonJs.js"></script>
