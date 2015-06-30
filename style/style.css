@@ -335,12 +335,13 @@ a:hover                        { text-decoration:underline; }
     .list-advantages {
         overflow: hidden;
         padding: 25px 30px 28px;
+        margin-bottom: 20px;
         background: #f0f0f0;
     }
         .list-advantages li {
             float: left;
-            width: 265px;
-            margin-left: 60px;
+            width: 20.704%;
+            margin-left: 5.73%;
         }
         .list-advantages li:first-child {
             margin-left: 0;
@@ -358,7 +359,7 @@ a:hover                        { text-decoration:underline; }
             }
             .list-advantages .wrap {
                 display: inline-block;
-                width: 150px;
+                width: 56.61%;
                 margin-left: 25px;
                 vertical-align: middle;
             }
@@ -373,6 +374,67 @@ a:hover                        { text-decoration:underline; }
                     font: 12px Tahoma;
                     color: #717171;
                 }
+    .list-service {
+        overflow: hidden;
+    }
+        .list-service li {
+            overflow: hidden;
+            position: relative;
+            float: left;
+            width: 23.6%;
+            margin-left: 1.86%;
+        }
+        .list-service li:first-child {
+            margin-left: 0;
+        }
+            .list-service a {
+                display: block;
+            }
+            .list-service a:hover .info {
+                background: rgba(0, 0, 0, .8);
+            }
+            .list-service a:hover .img {
+                width: 110%;
+                height: 110%;
+                margin: -5% 0 0 -5%;
+            }
+                .list-service .img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.3s;
+                }
+                .list-service .layout {
+                    width: 100%;
+                }
+                .list-service .info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 8px 15px;
+                    background: rgba(0, 0, 0, .6);
+                    color: #fff;
+                    transition: 0.3s;
+                }
+                    .list-service .left {
+                        display: inline-block;
+                        width: 56%;
+                        vertical-align: middle;
+                    }
+                        .name-service {
+                            display: block;
+                            font: 26px 'Agora thin';
+                        }
+                    .list-service .price {
+                        display: inline-block;
+                        width: 40%;
+                        margin-left: 3%;
+                        vertical-align: middle;
+                        text-align: right;
+                    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
