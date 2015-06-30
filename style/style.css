@@ -40,6 +40,7 @@ a:hover                        { text-decoration:underline; }
 .clear                         { clear:both; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
 .clearfix                      { display: inline-block; width: 100% }
+iframe                         { display: block }
 
 .box-sizing {
     -moz-box-sizing: border-box;
@@ -346,7 +347,7 @@ a:hover                        { text-decoration:underline; }
         .list-advantages li:first-child {
             margin-left: 0;
         }
-            .wrap-img {
+            .list-advantages .wrap-img {
                 display: inline-block;
                 width: 87px;
                 height: 87px;
@@ -382,7 +383,7 @@ a:hover                        { text-decoration:underline; }
             position: relative;
             float: left;
             width: 23.6%;
-            margin-left: 1.86%;
+            margin: 0 0 20px 1.86%;
         }
         .list-service li:first-child {
             margin-left: 0;
@@ -435,6 +436,62 @@ a:hover                        { text-decoration:underline; }
                         vertical-align: middle;
                         text-align: right;
                     }
+    .bg-grey {
+        overflow: hidden;
+        padding: 17px 0 22px;
+        background: #f0f0f0;
+    }
+        .block-reasons {
+            float: left;
+            width: 49.1%;
+            padding: 25px 35px;
+            background: #fff;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+            .block-reasons li {
+                height: 60px;
+                margin-bottom: 10px;
+            }
+                .block-reasons .wrap-img {
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                    background: #c5c3c3;
+                    vertical-align: middle;
+
+                    -webkit-border-radius: 70px;
+                    -moz-border-radius: 70px;
+                    border-radius: 70px;
+                }
+                .block-reasons .desc {
+                    display: inline-block;
+                    margin-left: 30px;
+                    vertical-align: middle;
+                    font: 26px 'Agora thin';
+                    color: #4e4e4e;
+                }
+        .list-small-video {
+            overflow: hidden;
+            float: right;
+            width: 49%;
+        }
+            .list-small-video li {
+                float: left;
+                width: 48%;
+                height: 220px;
+                margin-left: 3.8%;
+                margin-bottom: 30px;
+            }
+            .list-small-video li:nth-child(2n + 1) {
+                margin-left: 0;
+            }
+                .list-small-video iframe {
+                    width: 100% !important;
+                    height: 100% !important;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
