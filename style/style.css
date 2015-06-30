@@ -10,7 +10,7 @@ div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,
 	list-style:none;
     line-height: 1.2;
 }
-button                         { cursor: pointer; }
+button                         { cursor: pointer; padding: 0; }
 select, input, textarea        { font-size:12px; vertical-align:middle; }
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
@@ -155,6 +155,7 @@ a:hover                        { text-decoration:underline; }
                 text-decoration: underline;
             }
     .main-header {
+        overflow: hidden;
         text-align: center;
     }
         .logo {
@@ -163,17 +164,47 @@ a:hover                        { text-decoration:underline; }
         .header .contact {
             float: right;
         }
+            .header .contact li {
+                float: left;
+                margin-left: 45px;
+                text-align: left;
+            }
+            .header .contact li:first-child {
+                margin-left: 0;
+            }
+                a.tell:hover {
+                    text-decoration: none;
+                }
+                .btn-call-back {
+                    margin-top: 5px;
+                    color: #e3000f;
+                    font: 21px 'Agora light';
+                    background: none;
+                    border: none;
+                    border-bottom: 1px dotted #e3000f;
+                }
+                .header .contact .mail,
+                .header .contact .text {
+                    font: 14px Arial;
+                    color: #e3000f;
+                    border-bottom: 1px dotted #e3000f;
+                }
+                .header .contact .mail:hover {
+                    text-decoration: none;
+                }
         .btn-video {
             width: 215px;
             height: 55px;
+            margin-top: 5px;
             background: none;
             color: #e3000f;
             border: 4px solid #e3000f;
-            font: 26px 'Agora light', serif;
+            font: 26px 'Agora light';
             transition: .3s;
         }
         .btn-video:hover {
-            color: #ce0411;
+            color: #fff;
+            background: #e3000f;
         }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
@@ -210,15 +241,14 @@ a:hover                        { text-decoration:underline; }
 			float: left;
             margin-right: 90px;
 		}
-            .footer .tell {
+            .footer .tell,
+            .header .tell {
                 display: block;
                 font: 36px 'Agora light';
                 color: #999;
             }
-            a.tell {
-                text-decoration: none;
-            }
-                .footer .tell span {
+                .footer .tell span,
+                .header .tell span {
                     color: #2b2929;
                 }
             .footer .address {
