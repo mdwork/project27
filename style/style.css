@@ -483,7 +483,11 @@ iframe                         { display: block }
                 width: 48%;
                 height: 220px;
                 margin-left: 3.8%;
-                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+            .list-small-video li:first-child,
+            .list-small-video li:nth-child(2) {
+                margin-top: 0;
             }
             .list-small-video li:nth-child(2n + 1) {
                 margin-left: 0;
@@ -491,6 +495,90 @@ iframe                         { display: block }
                 .list-small-video iframe {
                     width: 100% !important;
                     height: 100% !important;
+                }
+    .brand-section {
+        margin-top: 10px;
+    }
+        .name-section {
+            overflow: hidden;
+        }
+            .name-section h2 {
+                margin: 20px 0;
+                font: 48px 'Agora thin';
+            }
+            .list-brands {
+                overflow: hidden;
+                text-align: center;
+            }
+                .list-brands li {
+                    display: inline-block;
+                    margin: 0 3% 20px;
+                    vertical-align: middle;
+                }
+                .list-brands li:first-child {
+                    margin-left: 0;
+                }
+                .list-brands li:last-child {
+                    margin-right: 0;
+                }
+    .review-section {
+        padding-bottom: 10px;
+    }
+        .list-review {
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+            .list-review > li {
+                float: left;
+                width: 30%;
+                margin: 0 0 20px 3.33%;
+                color: #4e4e4e;
+            }
+            .list-review > li:first-child {
+                margin-left: 0;
+            }
+                .list-review .top {
+                    margin-bottom: 10px;
+                }
+                    .list-review .user-foto {
+                        display: inline-block;
+                        vertical-align: middle;
+                        border: 3px #ebd200 solid;
+
+                        -webkit-border-radius: 90px;
+                        -moz-border-radius: 90px;
+                        border-radius: 90px;
+                    }
+                    .list-review .info {
+                        display: inline-block;
+                        margin-left: 15px;
+                        vertical-align: middle;
+                    }
+                        .list-review .name {
+                            display: block;
+                            font: 30px 'Agora thin';
+                            color: #000;
+                            line-height: 1;
+                        }
+                        .list-review .date {
+                            font: 14px Arial;
+                        }
+                        .stars {
+                            overflow: hidden;
+                        }
+                            .stars li {
+                                float: left;
+                                width: 20px;
+                                height: 20px;
+                                background: url("../images/content/stars.png") no-repeat;
+                                text-indent: -9999px;
+                            }
+                            .stars .no-active {
+                                background-position-x: -20px;
+                            }
+                .list-review p {
+                    font: 17px Arial;
+                    line-height: 1.4;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
