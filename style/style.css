@@ -143,6 +143,9 @@ a:hover                        { text-decoration:underline; }
             margin-left: 40px;
             background: url("../images/header/hart.png") no-repeat left center;
         }
+        .btn-remember:hover {
+            opacity: .7;
+        }
             .btn-remember:hover span {
                 text-decoration: none;
             }
@@ -151,6 +154,27 @@ a:hover                        { text-decoration:underline; }
                 color: #e3000f;
                 text-decoration: underline;
             }
+    .main-header {
+        text-align: center;
+    }
+        .logo {
+            float: left;
+        }
+        .header .contact {
+            float: right;
+        }
+        .btn-video {
+            width: 215px;
+            height: 55px;
+            background: none;
+            color: #e3000f;
+            border: 4px solid #e3000f;
+            font: 26px 'Agora light', serif;
+            transition: .3s;
+        }
+        .btn-video:hover {
+            color: #ce0411;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
