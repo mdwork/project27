@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    /*menu*/
     var flag = true;
 
     $(".btn-toggle-js").on('click', function () {
@@ -11,6 +12,7 @@ $(document).ready(function(){
         }
     });
 
+    /*Load form*/
     $('body').append('<div class="place-for-popup"></div>');
     $('.place-for-popup').load('popup.html .wrap-all-form', function(){
         function popup(popup, btnClick) {
@@ -41,4 +43,7 @@ $(document).ready(function(){
         popup(popup1, btn1);
         popup(popup2, btn2);
     });
+
+    /*Mask tell*/
+    $("#phone-mask").mask("+7 (999) 999-99-99");
 });
