@@ -194,19 +194,24 @@ iframe                         { display: block }
                 .header .contact .mail:hover {
                     text-decoration: none;
                 }
-        .btn-video {
+        .btn-video,
+        a.more-info {
+            display: inline-block;
             width: 215px;
-            height: 55px;
+            padding: 8px 0;
             margin-top: 5px;
             background: none;
             color: #e3000f;
+            text-align: center;
             border: 4px solid #e3000f;
             font: 26px 'Agora light';
             transition: .4s;
         }
-        .btn-video:hover {
+        .btn-video:hover,
+        a.more-info:hover {
             color: #fff;
             background: #e3000f;
+            text-decoration: none;
         }
 
 /*---------------NAV--------------*/
@@ -774,6 +779,46 @@ iframe                         { display: block }
                 -moz-border-radius: 10px;
                 border-radius: 10px;
             }
+    .list-portfolio {
+        overflow: hidden;
+        max-width: 1210px;
+        padding: 10px 0 20px;
+    }
+        .list-portfolio li {
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+            .list-portfolio .left-block {
+                float: left;
+                margin-right: 4%;
+            }
+                .list-portfolio h2 {
+                    margin-top: 0;
+                }
+            .list-portfolio .right-block {
+                overflow: hidden;
+            }
+                .list-portfolio .info {
+                    margin: 15px 0 25px;
+                }
+                    .list-portfolio .view,
+                    .list-portfolio .new-view {
+                        display: inline-block;
+                        margin-left: 60px;
+                        font: 26px 'Agora light';
+                        color: #000;
+                    }
+                    .list-portfolio .view {
+                        margin-left: 0;
+                    }
+                        .list-portfolio .number {
+                            color: #e3000f;
+                        }
+                a.more-info {
+                    width: 165px;
+                    margin-top: 30px;
+                    padding: 3px 0;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
