@@ -56,8 +56,12 @@ $(document).ready(function(){
 
                 var nameUser = name,
                     tellUser = tell,
+                    mailUser = mail,
+                    messageUser = message,
                     nameUserVal = nameUser.val(),
-                    tellUserVal = tellUser.val();
+                    tellUserVal = tellUser.val(),
+                    mailUserVal = mailUser.val(),
+                    messageUserVal = messageUser.val();
 
                 function checkField($field) {
                     $field.on('keydown', function () {
@@ -90,7 +94,7 @@ $(document).ready(function(){
                     $.ajax({
                         url: 'form.php',
                         type: 'POST',
-                        data: {nameUser: nameUserVal, tellUser: tellUserVal},
+                        data: {nameUser: nameUserVal, tellUser: tellUserVal, mailUser: mailUserVal, messageUser: messageUserVal },
                         success: function (data) {
                             if (data) {
                                 form.hide();
