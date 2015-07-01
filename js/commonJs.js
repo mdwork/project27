@@ -48,7 +48,7 @@ $(document).ready(function(){
         popup(popup1, btn1);
         popup(popup2, btn2);
 
-        function sendMail(form, name, tell) {
+        function sendMail(form, name, tell, mail, message) {
             var flag = false;
 
             form.on('click', function (e) {
@@ -57,11 +57,21 @@ $(document).ready(function(){
                 var nameUser = name,
                     tellUser = tell,
                     mailUser = mail,
-                    messageUser = message,
-                    nameUserVal = nameUser.val(),
-                    tellUserVal = tellUser.val(),
-                    mailUserVal = mailUser.val(),
-                    messageUserVal = messageUser.val();
+                    messageUser = message;
+
+                if(name != undefined) {
+                    var nameUserVal = nameUser.val();
+                }
+                if(tell != undefined) {
+                    tellUserVal = tellUser.val();
+                }
+                if(mail != undefined) {
+                    var mailUserVal = mailUser.val();
+                }
+                if(message != undefined) {
+                    var messageUserVal = messageUser.val();
+                }
+
 
                 function checkField($field) {
                     $field.on('keydown', function () {
