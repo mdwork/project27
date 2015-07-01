@@ -938,7 +938,7 @@ iframe                         { display: block }
                 width: 100%;
                 padding: 8px 0 8px 12px;
                 border: 1px solid #cecece;
-                font: 17px 'Agora thin';
+                font: 17px Arial;
                 background: #fff;
 
                 -moz-box-sizing: border-box;
@@ -948,9 +948,23 @@ iframe                         { display: block }
             .box-form-service .type-select {
                 height: 38px;
             }
-            .box-form-service .type-textarea {
-                height: 90px;
+            .box-form-service .wrap-select {
+                position: relative;
+                display: block;
             }
+                .box-form-service .wrap-select:after {
+                    content: '';
+                    position: absolute;
+                    right: 1px;
+                    top: 1px;
+                    display: block;
+                    height: 36px;
+                    width: 30px;
+                    background: url("../images/content/custom_select.jpg") no-repeat;
+                }
+                .box-form-service .type-textarea {
+                    height: 90px;
+                }
                 .box-form-service .form-service {
                     width: 100%;
                 }
