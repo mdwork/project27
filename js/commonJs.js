@@ -40,7 +40,7 @@ $(document).ready(function(){
 
         var popup1 = $('#popup1'),
             popup2 = $('#popup2'),
-            btn1 = $('#btn-popup1-js'),
+            btn1 = $('.btn-popup-full-form-js'),
             btn2 = $('#btn-popup2-js');
 
         popup(popup1, btn1);
