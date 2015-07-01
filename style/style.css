@@ -824,6 +824,24 @@ iframe                         { display: block }
                     margin-top: 30px;
                     padding: 3px 0;
                 }
+                .wrap-iframe {
+                    position: relative;
+                    height: 100%;
+                }
+                    .wrap-iframe:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 10;
+                    }
+                    .bg-popup-video iframe {
+                        display: inline-block;
+                        max-width: 90%;
+                    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -950,14 +968,24 @@ iframe                         { display: block }
     left: 50%;
     margin: -195px 0 0 -215px;
 }
-.bg-popup {
+.bg-popup,
+.bg-popup-video {
     display: none;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
     background: rgba(0, 0, 0, .6);
+}
+.bg-popup-video {
+    text-align: center;
+}
+.bg-popup-video iframe {
+    margin-top: 150px;
 }
 .success-message {
     display: none;

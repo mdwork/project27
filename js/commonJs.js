@@ -23,9 +23,7 @@ $(document).ready(function(){
                 $('.bg-popup').fadeIn(300);
             });
 
-            $('.bg-popup').on('click', function (e) {
-                e.stopPropagation();
-
+            $('.bg-popup').on('click', function () {
                 popup.fadeOut(300);
                 $('.bg-popup').fadeOut(300);
 
@@ -135,4 +133,17 @@ $(document).ready(function(){
 
     /*Mask tell*/
     $("#phone-mask").mask("+7 (999) 999-99-99");
+
+    /*popup for video*/
+    $('.wrap-iframe').on('click', function(){
+        $('body').append('<div class="bg-popup-video"></div>');
+
+        var currentVideo = $(this).find('iframe').clone();
+
+        $('.bg-popup-video').append(currentVideo).fadeIn(300);
+
+        $('.bg-popup-video').on('click', function(){
+            $(this).fadeOut(300).remove();
+        });
+    });
 });
