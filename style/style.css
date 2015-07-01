@@ -907,9 +907,76 @@ iframe                         { display: block }
             .step-service .wrap {
                 margin-left: 15px;
             }
-            .btn-red {
 
+    .box-form-service {
+        overflow: hidden;
+        border: 9px solid #f3f3f3;
+    }
+        .box-form-service > li {
+            overflow: hidden;
+            padding: 20px;
+        }
+        .box-form-service .desc {
+            float: left;
+            width: 27.4%;
+            height: 100%;
+            border-right: 9px solid #f3f3f3;
+        }
+            .box-form-service .header-form {
+                display: block;
+                margin-bottom: 20px;
+                font: 30px 'Agora thin';
             }
+            .box-form-service .name {
+                display: block;
+                margin-bottom: 5px;
+                font: 17px Arial;
+            }
+            .box-form-service .type-text,
+            .box-form-service .type-select,
+            .box-form-service .type-textarea {
+                width: 100%;
+                padding: 8px 0 8px 12px;
+                border: 1px solid #cecece;
+                font: 17px 'Agora thin';
+                background: #fff;
+
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .box-form-service .type-select {
+                height: 38px;
+            }
+            .box-form-service .type-textarea {
+                height: 90px;
+            }
+                .box-form-service .form-service {
+                    width: 100%;
+                }
+                    .box-form-service .form-service li {
+                        float: left;
+                        width: 31%;
+                        margin-left: 3%;
+                    }
+                    .box-form-service .form-service li:first-child {
+                        margin-left: 0;
+                    }
+                        .box-form-service .btn-red {
+                            display: block;
+                            width: 200px;
+                            padding: 5px 0;
+                            margin: 45px auto 0;
+                        }
+                .type-checkbox {
+                    display: block;
+                    margin-bottom: 10px;
+                    font: 17px Arial;
+                }
+                    .type-checkbox input {
+                        width: 17px;
+                        height: 17px;
+                    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
