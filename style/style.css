@@ -589,18 +589,24 @@ iframe                         { display: block }
         padding-bottom: 40px;
         color: #4e4e4e;
     }
-        .left-contact h2 {
+        .left-contact .name-section:first-child h2,
+        .section-case .name-section:first-child h2 {
             margin-top: 0;
         }
         .left-contact a:hover {
             text-decoration: none;
         }
-        .left-contact p,
+        .container p {
+            font: 17px Arial;
+            color: #4e4e4e;
+        }
         .left-contact li {
             font: 17px Arial;
+            color: #4e4e4e;
         }
-        .left-contact p {
+        .container p {
             line-height: 1.6;
+            margin-bottom: 20px;
         }
         .red-text,
         a.red-text,
@@ -694,6 +700,79 @@ iframe                         { display: block }
                 background: rgba(0, 0, 0, .6);
                 color: #fff;
                 font: 29px 'Agora thin';
+            }
+    .section-case {
+        float: left;
+        width: 48%;
+        max-width: 635px;
+        margin: 20px 0 30px;
+    }
+        .section-case p {
+            line-height: 1.5;
+        }
+    .performers {
+        float: right;
+        width: 51%;
+        margin: 20px 0 30px;
+    }
+        .performers .text {
+            display: block;
+            font: 36px 'Agora thin';
+        }
+        .list-performers {
+            overflow: hidden;
+        }
+            .list-performers li {
+                float: left;
+                width: 17.41%;
+                margin-left: 2%;
+                margin-bottom: 15px;
+            }
+            .list-performers li:first-child {
+                margin-left: 0;
+            }
+                .list-performers img {
+                    width: 100%;
+                }
+                .list-performers .name {
+                    display: block;
+                    margin-top: 10px;
+                    font: 24px 'Agora thin';
+                    color: #000;
+                }
+                .list-performers .vacantion {
+                    display: block;
+                    color: #4e4e4e;
+                    font: 14px Arial;
+                }
+    .weight-border {
+        margin-bottom: 10px;
+        padding: 5px 25px 15px;
+        border: 9px solid #f3f3f3;
+    }
+    .list-view-statist {
+        overflow: hidden;
+        width: 400px;
+        padding-bottom: 20px;
+    }
+        .list-view-statist li {
+            float: left;
+            width: 200px;
+            margin-bottom: 10px;
+            font: 14px Arial;
+        }
+            .list-view-statist li:before {
+                content: '';
+                display: inline-block;
+                width: 7px;
+                height: 7px;
+                margin: 4px 5px 0;
+                background: #e90080;
+                vertical-align: top;
+
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
