@@ -28,6 +28,11 @@ $(document).ready(function(){
 
                 popup.fadeOut(300);
                 $('.bg-popup').fadeOut(300);
+
+                setTimeout(function(){
+                    popup.find('.wrap-form').show();
+                    popup.find('.success-message').hide();
+                }, 300);
             });
 
             popup.on('click', function (e) {
@@ -42,6 +47,76 @@ $(document).ready(function(){
 
         popup(popup1, btn1);
         popup(popup2, btn2);
+
+        function sendMail(form, name, tell) {
+            var flag = false;
+
+            form.on('click', function (e) {
+                e.preventDefault();
+
+                var nameUser = name,
+                    tellUser = tell,
+                    nameUserVal = nameUser.val(),
+                    tellUserVal = tellUser.val();
+
+                function checkField($field) {
+                    $field.on('keydown', function () {
+                        $field.css('border-color', '#7b7b7b');
+
+                        flag = true;
+                    });
+                }
+
+                if (nameUserVal == '' || nameUserVal == ' ') {
+                    nameUser.css('border-color', '#f00');
+                    flag = false;
+
+                    checkField(nameUser);
+                }
+                else {
+                    flag = true;
+                }
+                if (tellUserVal == '' || tellUserVal == ' ') {
+                    tellUser.css('border-color', '#f00');
+                    flag = false;
+
+                    checkField(tellUser);
+                }
+                else {
+                    flag = true;
+                }
+
+                if (flag) {
+                    $.ajax({
+                        url: 'form.php',
+                        type: 'POST',
+                        data: {nameUser: nameUserVal, tellUser: tellUserVal},
+                        success: function (data) {
+                            if (data) {
+                                form.hide();
+                                $('.wrap-form').hide();
+
+                                form.fadeIn(500);
+                                $('.success-message').show();
+
+                                nameUserVal = nameUser.val('');
+                                tellUserVal = tellUser.val('');
+                            }
+                        }
+                    });
+                }
+            });
+        }
+
+        var form1 = $('#form1'),
+            form2 = $('#form2'),
+            name1 = $('#name1'),
+            name2 = $('#name2'),
+            tell1 = $('#tell1'),
+            tell2 = $('#tell2');
+
+        sendMail(form1, name1, tell1);
+        sendMail(form2, name2, tell2);
     });
 
     /*Mask tell*/
