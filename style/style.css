@@ -795,6 +795,26 @@ iframe                         { display: block }
                 .list-portfolio h2 {
                     margin-top: 0;
                 }
+                .wrap-video {
+                    display: block;
+                    position: relative;
+                }
+                    .wrap-video:after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        display: block;
+                        height: 110px;
+                        width: 110px;
+                        margin: -55px 0 0 -55px;
+                        background: url("../images/content/triagle_red.png") no-repeat center rgba(0, 0, 0, .7);
+                        cursor: pointer;
+
+                        -webkit-border-radius: 110px;
+                        -moz-border-radius: 110px;
+                        border-radius: 110px;
+                    }
             .list-portfolio .right-block {
                 overflow: hidden;
             }
