@@ -200,7 +200,8 @@ iframe                         { display: block }
                 }
         .btn-video,
         a.more-info,
-        .btn-red {
+        .btn-red,
+        a.btn-red {
             display: inline-block;
             width: 215px;
             padding: 8px 0;
@@ -868,19 +869,23 @@ iframe                         { display: block }
                         font: 12px Tahoma;
                     }
                 a.more-info,
-                .btn-red {
+                .btn-red,
+                a.btn-red {
                     width: 165px;
                     margin-top: 30px;
                     padding: 3px 0;
                 }
-                .btn-red {
+                .btn-red,
+                a.btn-red {
                     margin-left: 30px;
                     background: #e3000f;
                     color: #fff;
                 }
-                .btn-red:hover {
+                .btn-red:hover,
+                a.btn-red:hover {
                     background: #fff;
                     color: #e3000f;
+                    text-decoration: none;
                 }
                 .wrap-iframe {
                     position: relative;
@@ -961,6 +966,7 @@ iframe                         { display: block }
                     height: 36px;
                     width: 30px;
                     background: url("../images/content/custom_select.jpg") no-repeat;
+                    pointer-events: none;
                 }
                 .box-form-service .type-textarea {
                     height: 90px;
@@ -991,7 +997,80 @@ iframe                         { display: block }
                         width: 17px;
                         height: 17px;
                     }
-/*----------------------------------------------------------------------------------*/
+    .list-six-block {
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+        .list-six-block li {
+            position: relative;
+            float: left;
+            width: 16.12%;
+            margin-left: 0.65%;
+        }
+        .list-six-block li:first-child {
+            margin-left: 0;
+        }
+            .list-six-block .text {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                padding: 10px 15px;
+                background: rgba(0, 0, 0, .6);
+                font: 26px 'Agora thin';
+                color: #fff;
+            }
+            .list-six-block img {
+                width: 100%;
+            }
+    .list-post {
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+        .list-post > li {
+            float: left;
+            width: 32.3%;
+            padding: 9px;
+            margin-left: 1%;
+            border: 3px solid #e3000f;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .list-post > li:first-child {
+            margin-left: 0;
+        }
+            .list-post img {
+                float: left;
+                width: 48%;
+                margin-right: 20px;
+            }
+            .list-post .btn-red {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+                .list-post li ul {
+                    margin-top: 15px;
+                }
+                    .list-post li li {
+                        margin-bottom: 10px;
+                        font: 14px Arial;
+                    }
+                        .list-post li li:before {
+                            content: '';
+                            display: inline-block;
+                            width: 7px;
+                            height: 7px;
+                            margin: 3px 15px 0 0;
+                            background: #e3000f;
+                            vertical-align: top;
+
+                            -webkit-border-radius: 10px;
+                            -moz-border-radius: 10px;
+                            border-radius: 10px;
+                        }
+                            /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .footer {
