@@ -199,7 +199,8 @@ iframe                         { display: block }
                     text-decoration: none;
                 }
         .btn-video,
-        a.more-info {
+        a.more-info,
+        .btn-red {
             display: inline-block;
             width: 215px;
             padding: 8px 0;
@@ -824,10 +825,62 @@ iframe                         { display: block }
                         .list-portfolio .number {
                             color: #e3000f;
                         }
-                a.more-info {
+                    .scale {
+                        position: relative;
+                        display: inline-block;
+                        width: 370px;
+                        margin-right: 20px;
+                        background: #f0f0f0;
+                        vertical-align: middle;
+                    }
+                        .scale:before {
+                            content: '0';
+                            position: absolute;
+                            top: 20px;
+                            left: 0;
+                            font: 17px Arial;
+                            color: #4e4e4e;
+                        }
+                        .scale:after {
+                            content: '10';
+                            position: absolute;
+                            top: 20px;
+                            right: 0;
+                            font: 17px Arial;
+                            color: #4e4e4e;
+                        }
+                        .scale .line {
+                            display: block;
+                            width: 80%;
+                            height: 15px;
+                            background: url("../images/content/scale.jpg") repeat-y;
+                            background-size: 100% 100%;
+                        }
+                        .scale .number {
+                            position: absolute;
+                            top: 20px;
+                            left: 80%;
+                            margin-left: -5px;
+                            font: 17px Arial;
+                            color: #4e4e4e;
+                        }
+                    .list-portfolio .info .desc {
+                        font: 12px Tahoma;
+                    }
+                a.more-info,
+                .btn-red {
                     width: 165px;
                     margin-top: 30px;
                     padding: 3px 0;
+                }
+                .btn-red {
+                    margin-left: 30px;
+                    background: #e3000f;
+                    color: #fff;
+                }
+                .btn-red:hover {
+                    background: #fff;
+                    color: #e3000f;
                 }
                 .wrap-iframe {
                     position: relative;
@@ -847,12 +900,15 @@ iframe                         { display: block }
                         display: inline-block;
                         max-width: 90%;
                     }
-        .list-service li {
+        .step-service li {
             width: 19%;
             margin-left: 1%;
         }
-            .list-advantages .wrap {
+            .step-service .wrap {
                 margin-left: 15px;
+            }
+            .btn-red {
+
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
