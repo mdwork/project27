@@ -1159,6 +1159,40 @@ iframe                         { display: block }
             .service-box .more-info {
                 margin-left: 70px;
             }
+    .section2 {
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+        .section2 .big-foto {
+            float: left;
+            width: 49%;
+            margin-right: 2%;
+        }
+    .list-task {
+        overflow: hidden;
+    }
+        .list-task li {
+            position: relative;
+            float: left;
+            width: 31%;
+            margin: 0 0 20px 2.65%;
+        }
+        .list-task li:first-child {
+            margin-left: 0;
+        }
+            .list-task img {
+                max-width: 100%;
+            }
+            .list-task .desc {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 17px 5px 18px 25px;
+                background: rgba(0, 0, 0, .6);
+                font: 26px 'Agora light';
+                color: #fff;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/

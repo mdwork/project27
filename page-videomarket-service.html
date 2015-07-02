@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Страница видеомаркета</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+</head>
+
+<body>
+    <!--WIDGET-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups2", {mode: 0, width: "238", height: "213", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 20003922);
+    </script>
+
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups", {mode: 0, width: "238", height: "213", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 20003922);
+    </script>
+    <!--END-->
+
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="top-header">
+                <div class="container">
+                    <img class="promofoto" src="images/header/promofoto.png" alt="promofoto">
+
+                    <button class="btn-remember"><span>Запомнить студию</span></button>
+
+                    <ul class="list-soc-link">
+                        <li><a href="#">facebook</a></li>
+                        <li class="tw"><a href="#">twitter</a></li>
+                        <li class="lind"><a href="#">linkedin</a></li>
+                        <li class="vk"><a href="#">vkontakte</a></li>
+                        <li class="od"><a href="#">odnoclassniki</a></li>
+                        <li class="yt"><a href="#">youtube</a></li>
+                        <li class="inst"><a href="#">instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <header class="container main-header">
+                <div class="overflow">
+                    <h1 class="logo"><img src="images/header/logo.png" alt="logo"></h1>
+
+                    <ul class="contact">
+                        <li>
+                            <a class="tell" href="tel:+784957957780"><span>8 495</span> 795 77 80</a>
+                            <a class="mail" href="mailto:info@promofoto.net">info@promofoto.net</a>
+                        </li>
+
+                        <li>
+                            <a class="tell" href="tel:+784957957780"><span>8 495</span> 795 77 80</a>
+                            <span class="text">Адрес</span>
+                        </li>
+                        <li><button id="btn-popup2-js" class="btn-call-back">Перезвонить мне</button></li>
+                    </ul>
+
+                    <button class="btn-video btn-popup-full-form-js">Хочу снять ролик</button>
+                </div>
+            </header>
+
+            <nav class="nav container">
+                <div class="btn-menu">
+                    <div class="btn-toggle-js">
+                        <span class="text">Menu</span>
+                        <span class="btn-toggle">&#8212;</span>
+                    </div>
+                </div>
+
+                <div class="tbl-toggle">
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Видеопроизводство</a></li>
+                        <li><a href="#">Видеомаркетинг</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!--HEADER-->
+
+        <main class="content">
+            <div class="container">
+
+                <ul class="list-service">
+                    <li>
+                        <a href="#">
+                            <img class="img" src="images/content/service1.jpg" alt="">
+                            <img class="layout" src="images/content/bg_img.jpg" alt="">
+
+                            <div class="info">
+                                <div class="left">
+                                    <span class="name-service">Услуга 1</span>
+                                    <span class="desc">краткое описание услуги просто текст</span>
+                                </div>
+
+                                <span class="price">от 1 200 руб.</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img class="img" src="images/content/service2.jpg" alt="">
+                            <img class="layout" src="images/content/bg_img.jpg" alt="">
+
+                            <div class="info">
+                                <div class="left">
+                                    <span class="name-service">Услуга 2</span>
+                                    <span class="desc">краткое описание услуги просто текст</span>
+                                </div>
+
+                                <span class="price">от 1 200 руб.</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img class="img" src="images/content/service3.jpg" alt="">
+                            <img class="layout" src="images/content/bg_img.jpg" alt="">
+
+                            <div class="info">
+                                <div class="left">
+                                    <span class="name-service">Услуга 3</span>
+                                    <span class="desc">краткое описание услуги просто текст</span>
+                                </div>
+
+                                <span class="price">от 1 200 руб.</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img class="img" src="images/content/service4.jpg" alt="">
+                            <img class="layout" src="images/content/bg_img.jpg" alt="">
+
+                            <div class="info">
+                                <div class="left">
+                                    <span class="name-service">Услуга 4</span>
+                                    <span class="desc">краткое описание услуги просто текст</span>
+                                </div>
+
+                                <span class="price">от 1 200 руб.</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <header class="name-section">
+                    <h2>Заголовок</h2>
+                </header>
+
+                <div class="section2">
+                    <img class="big-foto" src="images/content/big_foto.jpg" alt="">
+
+                    <div class="overflow">
+                        <p>«Тренинг ветра» - это комплекс упражнений от мудрости даосских монахов, помогающий притягивать
+                            и удерживать мощные потоки энергии и достигать верхних миров. Эта практика умножит концентрацию,
+                            повысит выносливость и даже очистит карму.</p>
+
+                        <p>«Тренинг ветра» - это комплекс упражнений от мудрости даосских монахов, помогающий притягивать
+                            и удерживать мощные потоки энергии и достигать верхних миров. Эта практика умножит концентрацию,
+                            повысит выносливость и даже очистит карму.</p>
+
+                        <p>«Тренинг ветра» - это комплекс упражнений от мудрости даосских монахов, помогающий притягивать
+                            и удерживать мощные потоки энергии и достигать верхних миров. Эта практика умножит концентрацию,
+                            повысит выносливость и даже очистит карму.</p>
+                    </div>
+                </div>
+
+                <header class="name-section">
+                    <h2>Какие задачи решаем</h2>
+                </header>
+
+                <ul class="list-task">
+                    <li>
+                        <img src="images/content/task_foto.jpg" alt="">
+
+                        <span class="desc">Задача 1</span>
+                    </li>
+
+                    <li>
+                        <img src="images/content/task_foto.jpg" alt="">
+
+                        <span class="desc">Задача 1</span>
+                    </li>
+
+                    <li>
+                        <img src="images/content/task_foto.jpg" alt="">
+
+                        <span class="desc">Задача 1</span>
+                    </li>
+                </ul>
+
+                <header class="name-section">
+                    <h2>Название услуги</h2>
+                </header>
+
+                <p>«Тренинг ветра» организует Александр Александров, практик йоги, цигуна, нэйгуна и тенсегрити. За скромный
+                    период времени сертифицированный преподаватель йоги международного класса изменил своё тело и сознание.
+                    Теперь он воодушевленно делится своими навыками и методиками. «Тренинг ветра» - это комплекс упражнений
+                    от мудрости даосских монахов, помогающий притягивать и удерживать мощные потоки энергии и достигать
+                    верхних миров. Эта практика умножит концентрацию, повысит выносливость и даже очистит карму. Обучит
+                    желающих тайскому йога-массажу Олег Чертков, прошедший обучение у одних из лучших мастеров тайского
+                    массажа Левана Хвингия и Павла Янишевского. В своих техниках Олег сочетает классику тайского массажа,
+                    йогу и технику динамического массажа.</p>
+
+                <ul class="list-post">
+                    <li>
+                        <img src="images/content/post.jpg" alt="">
+
+                        <ul class="character">
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                        </ul>
+
+                        <a href="#" class="btn-red">Подробнее</a>
+                    </li>
+
+                    <li>
+                        <img src="images/content/post.jpg" alt="">
+
+                        <ul class="character">
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                        </ul>
+
+                        <a href="#" class="btn-red">Подробнее</a>
+                    </li>
+
+                    <li>
+                        <img src="images/content/post.jpg" alt="">
+
+                        <ul class="character">
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                            <li>Посещений: 90</li>
+                        </ul>
+
+                        <a href="#" class="btn-red">Подробнее</a>
+                    </li>
+                </ul>
+
+                <section class="container review-section">
+                    <header class="name-section">
+                        <h2>Отзывы</h2>
+                    </header>
+
+                    <ul class="list-review">
+                        <li>
+                            <div class="top">
+                                <img class="user-foto" src="images/content/user_foto.png" alt="img">
+
+                                <div class="info">
+                                    <span class="name">Иван Иванов</span>
+                                    <span class="date">12 марта 2006</span>
+
+                                    <ul class="stars">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li class="no-active">4</li>
+                                        <li class="no-active">5</li>
+                                    </ul>
+                                </div>
+                            </div><!--end TOP-->
+
+                            <p>Наш первый зал уже готов!!!  Мы создали для вас приятную обстановку, в которой хочется работать
+                                и создавать новые шедевры. Зал Loft отличает именно атмосферность места. </p>
+                        </li>
+
+                        <li>
+                            <div class="top">
+                                <img class="user-foto" src="images/content/user_foto.png" alt="img">
+
+                                <div class="info">
+                                    <span class="name">Иван Иванов</span>
+                                    <span class="date">12 марта 2006</span>
+
+                                    <ul class="stars">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li class="no-active">5</li>
+                                    </ul>
+                                </div>
+                            </div><!--end TOP-->
+
+                            <p>Наш первый зал уже готов!!!  Мы создали для вас приятную обстановку, в которой хочется работать
+                                и создавать новые шедевры. Зал Loft отличает именно атмосферность места. </p>
+                        </li>
+
+                        <li>
+                            <div class="top">
+                                <img class="user-foto" src="images/content/user_foto.png" alt="img">
+
+                                <div class="info">
+                                    <span class="name">Иван Иванов</span>
+                                    <span class="date">12 марта 2006</span>
+
+                                    <ul class="stars">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li class="no-active">5</li>
+                                    </ul>
+                                </div>
+                            </div><!--end TOP-->
+
+                            <p>Наш первый зал уже готов!!!  Мы создали для вас приятную обстановку, в которой хочется работать
+                                и создавать новые шедевры. Зал Loft отличает именно атмосферность места. </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <ul class="box-form-service">
+                    <li class="desc">
+                        <span class="header-form">Заявка</span>
+
+                        <p>Наш первый зал уже готов!!!  Мы создали для вас приятную обстановку, в которой хочется работать
+                            и создавать новые шедевры. Зал Loft отличает именно атмосферность места. Наш первый зал уже готов!!!
+                            Мы создали для вас приятную обстановку, в которой хочется работать и создавать новые шедевры.</p>
+                    </li>
+
+                    <li>
+                        <form class="form-service" action="" method="post">
+                            <ul>
+                                <li>
+                                    <span class="name">Имя</span>
+                                    <input class="type-text">
+                                </li>
+
+                                <li>
+                                    <span class="name">Селект</span>
+                                        <span class="wrap-select">
+                                            <select class="type-select">
+                                                <option>Название</option>
+                                                <option>Название2</option>
+                                                <option>Название3</option>
+                                            </select>
+                                        </span>
+                                </li>
+
+                                <li>
+                                    <span class="name">Текст</span>
+                                    <input class="type-textarea">
+                                </li>
+                            </ul>
+
+                            <label class="type-checkbox">
+                                <input type="checkbox">
+                                Название
+                            </label>
+
+                            <label class="type-checkbox">
+                                <input type="checkbox">
+                                Название2
+                            </label>
+
+                            <button class="btn-red">Отправить заявку</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer container">
+        <div class="left">
+            <ul class="menu">
+                <li><a href="#">Фотоагентство</a></li>
+                <li><a href="#">Фотостудия</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Карта сайта</a></li>
+            </ul>
+
+            <span class="counter">
+                <img src="images/footer/counter.jpg" alt="counter">
+            </span>
+        </div><!--end LEFT-->
+
+        <div class="wrap">
+            <div class="contact">
+                <a class="tell" href="tel:+784957957780"><span>8 495</span> 795 77 80</a>
+                <a class="tell" href="tel:+784957957780"><span>8 495</span> 795 77 80</a>
+
+                <address class="address">
+                    <span>Адрес</span>
+                </address>
+
+                <span class="text-soc-link">Мы в соц сети -</span>
+                <ul class="list-soc-link">
+                    <li><a href="#">google</a></li>
+                    <li class="tw"><a href="#">twitter</a></li>
+                    <li class="vk"><a href="#">vkontakte</a></li>
+                    <li class="rss"><a href="#">rss</a></li>
+                    <li class="fb"><a href="#">facebook</a></li>
+                    <li class="od"><a href="#">odnoclassniki</a></li>
+                </ul>
+            </div><!--end LIST-SOC-->
+
+            <ul class="list-soc-group">
+                <li><!-- VK Widget -->
+                    <div id="vk_groups"></div>
+                </li>
+
+                <li>
+                    <!-- VK Widget -->
+                    <div id="vk_groups2"></div>
+                </li>
+
+                <li>
+                    <!-- FB Widget -->
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="237" data-height="185" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="false">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/facebook">
+                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div><!--end WRAP-->
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <script src="js/commonJs.js"></script>
+</body>
+</html>
