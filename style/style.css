@@ -456,6 +456,7 @@ iframe                         { display: block }
         .block-reasons {
             float: left;
             width: 49.1%;
+            height: 470px;
             padding: 25px 35px;
             background: #fff;
 
@@ -1070,7 +1071,67 @@ iframe                         { display: block }
                             -moz-border-radius: 10px;
                             border-radius: 10px;
                         }
-                            /*----------------------------------------------------------------------------------*/
+        .block-reasons .btn-red {
+            margin: 20px 0 0 0;
+        }
+        .block-reasons h2 {
+            margin-top: 0;
+        }
+    .list-employee {
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+        .list-employee li {
+            float: left;
+            width: 23%;
+            margin: 0 0 20px 2.65%;
+        }
+        .list-employee li:first-child {
+            margin-left: 0;
+        }
+            .list-employee .name {
+                display: block;
+                margin-top: 10px;
+                font: 42px 'Agora thin';
+            }
+            .list-employee .vacantion {
+                display: block;
+                color: #4e4e4e;
+                font: 16px Arial;
+            }
+        .tbl-schedule {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+            .tbl-schedule th,
+            .tbl-schedule td {
+                padding: 13px 25px 14px;
+                text-align: left;
+                border-bottom: 1px solid #c8c8c8;
+                color: #4e4e4e;
+            }
+            .tbl-schedule th {
+                font: 15px Arial;
+                background: #f0f0f0;
+            }
+            .tbl-schedule td {
+                padding: 13px 20px 14px;
+                font: 17px Arial;
+            }
+                .tbl-schedule span {
+                    display: inline-block;
+                    margin: 0 5px;
+                    color: #e3000f;
+                    border-bottom: 1px dotted #e3000f;
+                    cursor: default;
+                }
+                .tbl-schedule span:hover {
+                    background: #e3000f;
+                    margin: 0;
+                    padding: 0 5px;
+                    color: #fff;
+                }
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .footer {
