@@ -1340,6 +1340,8 @@ iframe                         { display: block }
 }
 .success-message {
     display: none;
+    text-align: center;
+    font-size: 20px;
 }
 /*-----------------------POPUP-------------------------*/
 #slider1_container,
