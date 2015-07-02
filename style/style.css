@@ -1324,22 +1324,25 @@ iframe                         { display: block }
     width: 100%;
 }
 .jssora03l, .jssora03r {
-    display: block;
+    display: block !important;
     position: absolute;
-    /* size of arrow element */
-    width: 55px;
-    height: 55px;
+    top: 50% !important;
+    margin-top: -29px;
+    width: 58px;
+    height: 58px;
     cursor: pointer;
-    background: url('../images/a03.png') no-repeat;
     overflow: hidden;
+    background: url("../images/content/btn_slider_left.png") no-repeat;
 }
-.jssora03l { background-position: -3px -33px; top: 123px; left: 8px; }
-.jssora03r { background-position: -63px -33px; top: 123px; right: 8px; }
-.jssora03l:hover { background-position: -123px -33px; }
-.jssora03r:hover { background-position: -183px -33px; }
-.jssora03l.jssora03ldn { background-position: -243px -33px; }
-.jssora03r.jssora03rdn { background-position: -303px -33px; }
-
+.jssora03r {
+    right: 10px;
+}
+.jssora03l {
+    left: 10px;
+}
+#slider1_container > div > div {
+    height: 100%;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
