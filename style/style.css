@@ -90,7 +90,7 @@ iframe                         { display: block }
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .header {
-    margin-bottom: 11px;
+    margin-bottom: 20px;
 }
     .top-header {
         overflow: hidden;
@@ -518,6 +518,7 @@ iframe                         { display: block }
             .name-section h2 {
                 margin: 20px 0 15px;
                 font: 48px 'Agora thin';
+                vertical-align: middle;
             }
             .list-brands {
                 overflow: hidden;
@@ -1131,6 +1132,33 @@ iframe                         { display: block }
                     padding: 0 5px;
                     color: #fff;
                 }
+        .service-box .wrap {
+            overflow: hidden;
+            padding: 27px 0 15px;
+            text-align: right;
+        }
+            .service-box h2 {
+                float: left;
+            }
+            .service-box .price,
+            .service-box .info,
+            .service-box .more-info {
+                display: inline-block;
+                margin-top: 0;
+                vertical-align: middle;
+            }
+            .service-box .price {
+                color: #e3000f;
+                font: 30px 'Agora light';
+            }
+            .service-box .desc {
+                margin-left: 50px;
+                font: 12px Tahoma;
+                color: #717171;
+            }
+            .service-box .more-info {
+                margin-left: 70px;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
