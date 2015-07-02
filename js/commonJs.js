@@ -15,6 +15,12 @@ $(document).ready(function(){
     /*Load form*/
     $('body').append('<div class="place-for-popup"></div>');
     $('.place-for-popup').load('popup.html .wrap-all-form', function(){
+        $('.tell-js').bind("change keyup input click", function() {
+            if (this.value.match(/[^0-9]/g)) {
+                 this.value = this.value.replace(/[^0-9]/g, '');
+            }
+        });
+
         function popup(popup, btnClick) {
             btnClick.on('click', function (e) {
                 e.preventDefault();
@@ -129,6 +135,8 @@ $(document).ready(function(){
 
         sendMail(form1, name1, tell1);
         sendMail(form2, name2, tell2);
+
+
     });
 
     /*Mask tell*/
@@ -145,6 +153,12 @@ $(document).ready(function(){
         $('.bg-popup-video').on('click', function(){
             $(this).fadeOut(300).remove();
         });
+    });
+
+    $('.tell-js').bind("change keyup input click", function() {
+        if (this.value.match(/[^0-9]/g)) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        }
     });
 
 
