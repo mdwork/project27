@@ -46,9 +46,6 @@ iframe                         { display: block }
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 100%;
-	max-width: 980px;
-	margin: 0 auto;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
@@ -73,7 +70,8 @@ iframe                         { display: block }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .container {
-	width: 1340px;
+	max-width: 1340px;
+    width: 100%;
 	margin: 0 auto;
 }
 .wrapper {
@@ -163,6 +161,9 @@ iframe                         { display: block }
         .logo {
             float: left;
         }
+            .logo img {
+                max-width: 100%;
+            }
         .header .contact {
             float: right;
         }
@@ -353,7 +354,7 @@ iframe                         { display: block }
     }
         .list-advantages li {
             float: left;
-            width: 20.704%;
+            width: 20.7%;
             margin-left: 5.73%;
         }
         .list-advantages li:first-child {
@@ -1382,6 +1383,55 @@ iframe                         { display: block }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 1340px) {
+    .wrapper,
+    .top-header {
+        min-width: 320px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .header .contact li {
+        float: none;
+        margin: 0 15px 15px 0;
+    }
+    .tbl-toggle a {
+        font-size: 22px;
+    }
+    .tbl-toggle li {
+        width: 160px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .tbl-toggle li {
+        width: auto;
+        padding: 0 25px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .main-header {
+        text-align: left;
+    }
+    .main-header .btn-video {
+        float: right;
+        margin-top: -75px;
+    }
+    .header .contact {
+        float: left;
+    }
+    .logo {
+        float: none;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .big-video .popup {
+        position: relative;
+        margin: 20px auto 0;
+    }
+    .big-video {
+        height: auto;
+    }
+}
 @media screen and (max-width: 780px) {
     .tbl-toggle {
         display: none;
@@ -1392,5 +1442,31 @@ iframe                         { display: block }
     .tbl-toggle li {
         display: block;
         float: none;
+    }
+}
+@media screen and (max-width: 650px) {
+    .header .contact {
+        float: none;
+        margin-bottom: 35px;
+    }
+    .main-header .btn-video {
+        float: none;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .promofoto {
+        display: block;
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+    .btn-remember {
+        float: none;
+        margin: 0 0 15px 5px;
+    }
+    .header .list-soc-link {
+        overflow: hidden;
+        float: none;
+        margin-bottom: 5px;
     }
 }
