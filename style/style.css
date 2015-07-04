@@ -752,6 +752,7 @@ iframe                         { display: block }
             .list-performers li {
                 float: left;
                 width: 17.41%;
+                max-width: 120px;
                 margin-left: 2%;
                 margin-bottom: 15px;
             }
@@ -779,12 +780,13 @@ iframe                         { display: block }
     }
     .list-view-statist {
         overflow: hidden;
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         padding-bottom: 20px;
     }
         .list-view-statist li {
             float: left;
-            width: 200px;
+            width: 50%;
             margin-bottom: 10px;
             font: 14px Arial;
         }
@@ -1447,6 +1449,13 @@ iframe                         { display: block }
     .tbl-toggle li {
         width: 160px;
     }
+    .section-case,
+    .performers {
+        float: none;
+        width: auto;
+        max-width: none;
+        margin-left: 10px;
+    }
 }
 @media screen and (max-width: 1050px) {
     .list-small-video {
@@ -1531,6 +1540,11 @@ iframe                         { display: block }
         float: none;
         margin-bottom: 35px;
     }
+    .list-performers li,
+    .list-performers li:first-child {
+        width: auto;
+        margin-left: 15px;
+    }
     .main-header .btn-video {
         float: none;
         margin-top: 0;
@@ -1579,6 +1593,9 @@ iframe                         { display: block }
     }
 }
 @media screen and (max-width: 550px) {
+    .weight-border {
+        padding: 5px 15px 15px;
+    }
     .list-soc-group li {
         float: none;
         margin: 0 0 20px;
@@ -1629,5 +1646,10 @@ iframe                         { display: block }
     .list-brands li {
         display: block;
         margin: 0 0 30px 0;
+    }
+    .list-view-statist li {
+        float: none;
+        width: auto;
+        margin-left: 10px;
     }
 }
