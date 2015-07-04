@@ -1080,7 +1080,8 @@ iframe                         { display: block }
                 margin-left: 0;
                 margin-top: 20px;
             }
-                .list-post li ul {
+                .list-post li .character {
+                    overflow: hidden;
                     margin-top: 15px;
                 }
                     .list-post li li {
@@ -1194,7 +1195,11 @@ iframe                         { display: block }
         .section2 .big-foto {
             float: left;
             width: 49%;
+            min-width: 350px;
             margin-right: 2%;
+        }
+        .section2 .overf {
+            overflow: hidden;
         }
     .list-task {
         overflow: hidden;
@@ -1203,6 +1208,7 @@ iframe                         { display: block }
             position: relative;
             float: left;
             width: 31%;
+            max-width: 416px;
             margin: 0 0 20px 2.65%;
         }
         .list-task li:first-child {
@@ -1485,6 +1491,21 @@ iframe                         { display: block }
     .list-portfolio .info .desc:before {
         display: none;
     }
+    .section2 .overf {
+        overflow: visible;
+    }
+}
+@media screen and (max-width: 980px) {
+    .list-post {
+        text-align: center;
+    }
+    .list-post img {
+        display: inline-block;
+        float: none;
+        width: auto;
+        margin-right: 0;
+        max-width: 95%;
+    }
 }
 @media screen and (max-width: 900px) {
     .tbl-toggle li {
@@ -1618,8 +1639,32 @@ iframe                         { display: block }
         margin: 0 2% 20px;
         vertical-align: top;
     }
+    .list-task {
+        text-align: center;
+    }
+    .list-task li {
+        float: none;
+        display: inline-block;
+        width: 47%;
+        margin: 0 1% 20px;
+        vertical-align: top;
+    }
+    .list-post {
+        text-align: center;
+    }
+    .list-post > li {
+        float: none;
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 20px;
+        vertical-align: top;
+    }
 }
 @media screen and (max-width: 600px) {
+    .section2 .big-foto {
+        float: none;
+        margin: 0 0 20px;
+    }
     .list-small-video li,
     .list-small-video li:nth-child(2n + 1),
     .list-small-video li:nth-child(2n) {
@@ -1663,6 +1708,10 @@ iframe                         { display: block }
     }
 }
 @media screen and (max-width: 450px) {
+    .list-post > li {
+        width: 300px;
+        margin-left: 0;
+    }
     .list-review > li,
     .list-review > li:first-child {
         width: 95%;
@@ -1716,8 +1765,20 @@ iframe                         { display: block }
         display: block;
         margin: 0 0 15px 0;
     }
+    .list-task li {
+        float: none;
+        display: inline-block;
+        width: auto;
+        margin: 0 0 20px;
+    }
 }
 @media screen and (max-width: 380px) {
+    .section2 .big-foto {
+        float: none;
+        min-width: 300px;
+        width: 100%;
+        margin: 0 0 20px;
+    }
     .popup,
     .big-video .popup {
         width: 100%;
