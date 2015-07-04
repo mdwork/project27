@@ -1534,6 +1534,11 @@ iframe                         { display: block }
     .list-review .info {
         margin: 0 10px;
     }
+    .left-contact,
+    .right-contact {
+        float: none;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 650px) {
     .header .contact {
