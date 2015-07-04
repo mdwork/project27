@@ -1035,6 +1035,7 @@ iframe                         { display: block }
             position: relative;
             float: left;
             width: 16.12%;
+            max-width: 216px;
             margin-left: 0.65%;
         }
         .list-six-block li:first-child {
@@ -1480,6 +1481,17 @@ iframe                         { display: block }
     .list-small-video {
         float: none;
         margin: 0 auto 20px;
+    }
+    .list-six-block {
+        text-align: center;
+    }
+    .list-six-block li,
+    .list-six-block li:first-child {
+        float: none;
+        display: inline-block;
+        width: 216px;
+        margin: 0 1% 15px;
+        vertical-align: top;
     }
 }
 @media screen and (max-width: 1020px) {
