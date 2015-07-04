@@ -1495,6 +1495,14 @@ iframe                         { display: block }
         float: none;
         margin-bottom: 35px;
     }
+    .list-portfolio .right-block {
+        overflow: visible;
+    }
+    .list-portfolio .view,
+    .list-portfolio .new-view {
+        display: block;
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 800px) {
     .big-video .popup {
@@ -1538,6 +1546,12 @@ iframe                         { display: block }
     .right-contact {
         float: none;
         width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .list-portfolio .left-block {
+        float: none;
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 650px) {
@@ -1623,6 +1637,10 @@ iframe                         { display: block }
         float: none;
         margin: 0 0 40px 10px;
     }
+    .list-portfolio iframe {
+        width: 350px !important;
+        height: 198px !important;
+    }
 }
 @media screen and (max-width: 420px) {
     .list-advantages li,
@@ -1656,5 +1674,15 @@ iframe                         { display: block }
         float: none;
         width: auto;
         margin-left: 10px;
+    }
+    .list-portfolio iframe {
+        width: 320px !important;
+        height: 180px !important;
+    }
+}
+@media screen and (max-width: 350px) {
+    .list-portfolio iframe {
+        width: 300px !important;
+        height: 180px !important;
     }
 }
