@@ -1177,6 +1177,10 @@ iframe                         { display: block }
                 margin-top: 0;
                 vertical-align: middle;
             }
+            .service-box .info {
+                width: 100%;
+                max-width: 585px;
+            }
             .service-box .price {
                 color: #e3000f;
                 font: 30px 'Agora light';
@@ -1422,6 +1426,19 @@ iframe                         { display: block }
     .top-header {
         min-width: 310px;
     }
+    .service-box .price {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .service-box .wrap {
+        text-align: left;
+    }
+    .service-box h2 {
+        float: none;
+    }
+    .service-box .info {
+        max-width: none;
+    }
 }
 @media screen and (max-width: 1340px) {
     .list-advantages .wrap,
@@ -1475,6 +1492,13 @@ iframe                         { display: block }
         width: auto;
         max-width: none;
         margin-left: 10px;
+    }
+    .service-box h2 {
+        float: none;
+    }
+    .service-box .wrap {
+        text-align: left;
+        padding-left: 10px;
     }
 }
 @media screen and (max-width: 1050px) {
