@@ -396,6 +396,7 @@ iframe                         { display: block }
             position: relative;
             float: left;
             width: 23.6%;
+            max-width: 377px;
             margin: 0 0 20px 1.86%;
         }
         .list-service li:first-child {
@@ -455,8 +456,7 @@ iframe                         { display: block }
         background: #f0f0f0;
     }
         .block-reasons {
-            float: left;
-            width: 49.1%;
+            overflow: hidden;
             height: 470px;
             padding: 25px 35px;
             background: #fff;
@@ -466,36 +466,45 @@ iframe                         { display: block }
             box-sizing: border-box;
         }
             .block-reasons li {
-                height: 60px;
+                min-height: 60px;
+                max-width: 550px;
                 margin-bottom: 10px;
             }
                 .block-reasons .wrap-img {
-                    display: inline-block;
-                    width: 60px;
-                    height: 60px;
-                    background: #c5c3c3;
+                    display: table-cell;
                     vertical-align: middle;
-
-                    -webkit-border-radius: 70px;
-                    -moz-border-radius: 70px;
-                    border-radius: 70px;
                 }
+                    .block-reasons .wrap-img:after {
+                        content: '';
+                        display: inline-block;
+                        width: 60px;
+                        height: 60px;
+                        background: #c5c3c3;
+                        vertical-align: middle;
+
+                        -webkit-border-radius: 70px;
+                        -moz-border-radius: 70px;
+                        border-radius: 70px;
+                    }
                 .block-reasons .desc {
-                    display: inline-block;
-                    margin-left: 30px;
+                    display: table-cell;
+                    padding-left: 30px;
                     vertical-align: middle;
                     font: 26px 'Agora thin';
                     color: #4e4e4e;
+                    line-height: 1;
                 }
         .list-small-video {
             overflow: hidden;
             float: right;
-            width: 49%;
+            max-width: 657px;
+            margin-left: 20px;
         }
             .list-small-video li {
                 float: left;
                 width: 48%;
                 height: 220px;
+                max-width: 316px;
                 margin-left: 3.8%;
                 margin-top: 30px;
             }
@@ -536,6 +545,9 @@ iframe                         { display: block }
                 .list-brands li:last-child {
                     margin-right: 0;
                 }
+                    .list-brands li img {
+                        max-width: 95%;
+                    }
     .review-section {
         padding-bottom: 10px;
     }
@@ -1383,10 +1395,25 @@ iframe                         { display: block }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1355px) {
     .wrapper,
     .top-header {
-        min-width: 320px;
+        min-width: 310px;
+    }
+}
+@media screen and (max-width: 1340px) {
+    .list-advantages .wrap,
+    .list-advantages .wrap-img {
+        display: block;
+    }
+    .list-advantages .wrap {
+        width: auto;
+        margin: 10px 0 0 0;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .list-service .price {
+        width: 38%;
     }
 }
 @media screen and (max-width: 1150px) {
@@ -1401,10 +1428,27 @@ iframe                         { display: block }
         width: 160px;
     }
 }
+@media screen and (max-width: 1050px) {
+    .list-small-video {
+        float: none;
+        margin: 0 auto 20px;
+    }
+}
 @media screen and (max-width: 900px) {
     .tbl-toggle li {
         width: auto;
         padding: 0 25px;
+    }
+    .list-service {
+        text-align: center;
+    }
+    .list-service li,
+    .list-service li:first-child {
+        display: inline-block;
+        float: none;
+        width: 47%;
+        margin: 0 1% 20px 1%;
+        vertical-align: top;
     }
 }
 @media screen and (max-width: 850px) {
@@ -1444,6 +1488,15 @@ iframe                         { display: block }
         float: none;
     }
 }
+@media screen and (max-width: 750px) {
+    .list-review .top {
+        text-align: center;
+    }
+    .list-review .user-foto,
+    .list-review .info {
+        margin: 0 10px;
+    }
+}
 @media screen and (max-width: 650px) {
     .header .contact {
         float: none;
@@ -1453,8 +1506,34 @@ iframe                         { display: block }
         float: none;
         margin-top: 0;
     }
+    .list-advantages li,
+    .list-advantages li:first-child {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        width: 47%;
+        margin: 0 1% 20px 1%;
+    }
+    .list-review {
+        text-align: center;
+    }
+    .list-review > li,
+    .list-review > li:first-child {
+        float: none;
+        display: inline-block;
+        width: 43%;
+        margin: 0 2% 20px;
+        vertical-align: top;
+    }
 }
 @media screen and (max-width: 600px) {
+    .list-small-video li,
+    .list-small-video li:nth-child(2n + 1),
+    .list-small-video li:nth-child(2n) {
+        float: none;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
     .promofoto {
         display: block;
         margin-bottom: 15px;
@@ -1468,5 +1547,47 @@ iframe                         { display: block }
         overflow: hidden;
         float: none;
         margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .popup {
+        padding: 30px 25px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .list-review > li,
+    .list-review > li:first-child {
+        width: 95%;
+        margin: 0 0 20px;
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .list-advantages li,
+    .list-advantages li:first-child {
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+    .list-advantages .wrap-img {
+        margin: 0 auto;
+    }
+    .list-service li,
+    .list-service li:first-child {
+        width: 97%;
+        margin: 0 1% 20px 1%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .popup,
+    .big-video .popup {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    .list-brands li {
+        display: block;
+        margin: 0 0 30px 0;
     }
 }
