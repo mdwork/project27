@@ -1410,6 +1410,26 @@ iframe                         { display: block }
         width: auto;
         margin: 10px 0 0 0;
     }
+    .name-section h2 {
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .footer .wrap {
+        float: none;
+    }
+    .footer .left {
+        margin: 0 40px 40px 10px;
+    }
+    .footer .contact {
+        float: right;
+        margin-bottom: 40px;
+    }
+    .list-soc-group {
+        float: none;
+        clear: both;
+        margin-left: 10px;
+    }
 }
 @media screen and (max-width: 1160px) {
     .list-service .price {
@@ -1474,6 +1494,15 @@ iframe                         { display: block }
     }
     .big-video {
         height: auto;
+    }
+    .list-soc-group li {
+        margin-bottom: 20px;
+    }
+    .list-soc-group li:last-child {
+        float: none;
+        overflow: hidden;
+        clear: both;
+        margin: 0;
     }
 }
 @media screen and (max-width: 780px) {
@@ -1549,6 +1578,12 @@ iframe                         { display: block }
         margin-bottom: 5px;
     }
 }
+@media screen and (max-width: 550px) {
+    .list-soc-group li {
+        float: none;
+        margin: 0 0 20px;
+    }
+}
 @media screen and (max-width: 480px) {
     .popup {
         padding: 30px 25px;
@@ -1560,6 +1595,11 @@ iframe                         { display: block }
         width: 95%;
         margin: 0 0 20px;
         max-width: 400px;
+    }
+    .footer .left,
+    .footer .contact {
+        float: none;
+        margin: 0 0 40px 10px;
     }
 }
 @media screen and (max-width: 420px) {
