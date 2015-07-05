@@ -457,7 +457,7 @@ iframe                         { display: block }
     }
         .block-reasons {
             overflow: hidden;
-            height: 470px;
+            min-height: 470px;
             padding: 25px 35px;
             background: #fff;
 
@@ -1120,6 +1120,9 @@ iframe                         { display: block }
         .list-employee li:first-child {
             margin-left: 0;
         }
+            .list-employee li img {
+                max-width: 100%;
+            }
             .list-employee .name {
                 display: block;
                 margin-top: 10px;
@@ -1452,6 +1455,26 @@ iframe                         { display: block }
     .name-section h2 {
         margin-left: 15px;
     }
+    .videoproduct-section h2 {
+        float: left;
+    }
+    .videoproduct-section .wrap {
+        overflow: visible;
+        margin-left: 5px;
+    }
+    .videoproduct-section .price {
+        float: right;
+    }
+    .videoproduct-section .desc {
+        display: block;
+        margin: 0 0 5px;
+    }
+    .videoproduct-section .scale {
+        margin-bottom: 40px;
+    }
+    .videoproduct-section .more-info {
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 1200px) {
     .footer .wrap {
@@ -1495,6 +1518,9 @@ iframe                         { display: block }
     }
     .service-box h2 {
         float: none;
+    }
+    .videoproduct-section h2 {
+        float: left;
     }
     .service-box .wrap {
         text-align: left;
@@ -1572,9 +1598,14 @@ iframe                         { display: block }
         float: left;
     }
     .logo,
+    a.logo,
     .list-portfolio .left-block {
         float: none;
         margin-bottom: 35px;
+    }
+    .logo,
+    a.logo {
+        display: block;
     }
     .list-portfolio .right-block {
         overflow: visible;
@@ -1583,6 +1614,13 @@ iframe                         { display: block }
     .list-portfolio .new-view {
         display: block;
         margin-left: 0;
+    }
+    .list-employee li,
+    .list-employee li:first-child {
+        float: none;
+        display: inline-block;
+        width: 31%;
+        margin: 0 0 20px 1.5%;
     }
 }
 @media screen and (max-width: 800px) {
@@ -1602,6 +1640,12 @@ iframe                         { display: block }
         clear: both;
         margin: 0;
     }
+    .wrap-tbl-schedule {
+        overflow-x: scroll;
+    }
+    .tbl-schedule {
+        width: 784px;
+    }
 }
 @media screen and (max-width: 780px) {
     .tbl-toggle {
@@ -1613,6 +1657,7 @@ iframe                         { display: block }
     .tbl-toggle li {
         display: block;
         float: none;
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 750px) {
@@ -1635,11 +1680,22 @@ iframe                         { display: block }
     .step-service li {
         width: 32%;
     }
+    .videoproduct-section .price,
+    .videoproduct-section h2 {
+        float: none;
+    }
+    .videoproduct-section .wrap {
+        padding-top: 0;
+    }
 }
 @media screen and (max-width: 700px) {
     .list-portfolio .left-block {
         float: none;
         margin-right: 0;
+    }
+    .list-employee li,
+    .list-employee li:first-child {;
+        width: 47%;
     }
 }
 @media screen and (max-width: 650px) {
@@ -1778,7 +1834,14 @@ iframe                         { display: block }
     .list-advantages .wrap-img {
         margin: 0 auto;
     }
-
+    .list-employee {
+        padding-left: 10px;
+    }
+    .list-employee li,
+    .list-employee li:first-child {
+        width: 100%;
+        margin: 0 0 20px;
+    }
 }
 @media screen and (max-width: 420px) {
     .list-advantages li,
